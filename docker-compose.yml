@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  employeeportal.mvc:
+    image: ${DOCKER_REGISTRY-}employeeportalmvc
+    build:
+      context: .\EmployeePortal
+      dockerfile: Dockerfile
